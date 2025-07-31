@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 import time
 
-API_KEY = ""
+API_KEY = "d592d7a90b4f473fa644213aa8cf19f4"
 SALE_LISTINGS_URL = "https://api.rentcast.io/v1/listings/sale"
 PROPERTY_LOOKUP_URL = "https://api.rentcast.io/v1/properties"
 SECRET_PASSWORD = "letmein123"
@@ -50,7 +50,7 @@ if not st.session_state.authenticated:
     st.stop()
 
 zip_code = st.text_input("Enter ZIP Code", "90631")
-max_listings = st.slider("How many properties to look up?", 1, 20, 5)
+max_listings = st.slider("How many properties to look up?", 1, 5, 1)
 
 if st.button("Search Properties For Sale"):
     try:
