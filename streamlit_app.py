@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 import time
 
-API_KEY = "d592d7a90b4f473fa644213aa8cf19f4"
+API_KEY = ""
 SALE_LISTINGS_URL = "https://api.rentcast.io/v1/listings/sale"
 PROPERTY_LOOKUP_URL = "https://api.rentcast.io/v1/properties"
 SECRET_PASSWORD = "letmein123"
